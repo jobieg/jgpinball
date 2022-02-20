@@ -11,3 +11,10 @@
 [dev]
   command = "npm run start"
   targetPort = 8888
+
+[[redirects]]
+  from = "/netlify/anything"
+  to = "https://www.google.com/search?q=anything"
+  status = 200
+  force = true
+  headers = {X-From = "Netlify"}
